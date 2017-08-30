@@ -26,7 +26,7 @@ MyPlugin.prototype.apply = function(compiler) {
         data.files.push(filename);
       });
 
-      chunkInfo[chunk.id] = data;
+      chunkInfo[`chunk id#${chunk.id}`] = data;
     });
 
     console.log('chunk info', JSON.stringify(chunkInfo, null, 4));
