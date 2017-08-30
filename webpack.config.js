@@ -16,17 +16,12 @@ module.exports = {
                 test: /\.(css)$/,
                 loader: ExtractTextPlugin.extract({
                     fallback: "style-loader",
-                    use: {
-                        loader: "css-loader",
-                        options: {
-                            modules: true
-                        }
-                    }
+                    use: "css-loader"
                 }),
             },
             {
                 test: /\.(png|svg)$/,
-                loader: "file-loader",
+                loader: "file-loader"
             },
         ],
     },

@@ -87,3 +87,6 @@ Done in 1.10s.
 ```
 
 My expectation is that the `files` array for chunk #1 (i.e., feature-one) would include "logo.svg", but it doesn't.
+
+I'm not sure what's the most reasonable or supported way of disovering that feature-one's dependency graph includes the "logo.svg" file, but
+ultimately that's my goal -- to get a list of all the direct + transitive asset dependencies for a given entry-point or chunk.
